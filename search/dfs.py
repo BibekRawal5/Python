@@ -39,5 +39,6 @@ add_nodes(2, 5)
 add_nodes(3, 7)
 add_nodes(3, 6)
 
+print(maze)
 solve()
 
