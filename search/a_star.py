@@ -7,7 +7,11 @@ goal = 7
 start = 0
 nodes.append(start)
 heuristic = {0:6, 1:3, 2:4, 3:2, 4:5, 5:5, 6:9, 7:0}
+<<<<<<< HEAD
 
+=======
+options = []
+>>>>>>> b1a90484f68f9ec8a996957867e8018e519443c5
 
 def neighbours():
 
@@ -39,8 +43,13 @@ add_nodes(1, 2)
 add_nodes(1, 3)
 add_nodes(2, 4)
 add_nodes(2, 5)
+<<<<<<< HEAD
 add_nodes(3, 6)
 add_nodes(3, 7)
+=======
+add_nodes(3, 7)
+add_nodes(3, 6)
+>>>>>>> b1a90484f68f9ec8a996957867e8018e519443c5
 
 
 print(maze)

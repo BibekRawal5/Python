@@ -1,4 +1,5 @@
 import random
+<<<<<<< HEAD
 
 
 POPULATION_SIZE = 1000
@@ -10,6 +11,20 @@ GENES = '''abcdefghijklmnopqrstuvwx'.yz '''
 TARGET = "that's life."
 
 class Individual():
+=======
+'''fhhfh'''
+
+POPULATION_SIZE = 100
+
+# Valid genes
+GENES = '''abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOP
+QRSTUVWXYZ 1234567890, .-;:_!"#%&/()=?@${[]}'''
+
+# Target string to be generated
+TARGET = "What a day to be alive"
+
+class Individual(object):
+>>>>>>> b1a90484f68f9ec8a996957867e8018e519443c5
 	
 	#Class representing individual in population
 	
@@ -18,7 +33,11 @@ class Individual():
 		self.fitness = self.cal_fitness()
 
 	@classmethod
+<<<<<<< HEAD
 	def mutated_genes(cls):
+=======
+	def mutated_genes(self):
+>>>>>>> b1a90484f68f9ec8a996957867e8018e519443c5
 		'''
 		create random genes for mutation
 		'''
@@ -27,13 +46,21 @@ class Individual():
 		return gene
 
 	@classmethod
+<<<<<<< HEAD
 	def create_gnome(cls):
+=======
+	def create_gnome(self):
+>>>>>>> b1a90484f68f9ec8a996957867e8018e519443c5
 		'''
 		create chromosome or string of genes
 		'''
 		global TARGET
 		gnome_len = len(TARGET)
+<<<<<<< HEAD
 		return [cls.mutated_genes() for _ in range(gnome_len)]
+=======
+		return [self.mutated_genes() for _ in range(gnome_len)]
+>>>>>>> b1a90484f68f9ec8a996957867e8018e519443c5
 
 	def mate(self, par2):
 		'''
